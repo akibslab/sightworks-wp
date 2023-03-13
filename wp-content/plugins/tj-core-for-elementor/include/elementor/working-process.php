@@ -143,6 +143,7 @@ class TJ_WorkingProcess extends Widget_Base {
                 'point' => __('Point 2', 'elementor'),
               ],
             ],
+            'title_field' => '{{{ point }}}'
           ],
         ],
         'default' => [
