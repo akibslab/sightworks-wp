@@ -17,8 +17,8 @@ add_filter('wp_check_filetype_and_ext', function ($data, $file, $filename, $mime
   ];
 }, 10, 4);
 
-function tj_mime_types($mimes) {
+function sightworks_mime_types($mimes) {
   $mimes['svg'] = 'image/svg+xml';
   return $mimes;
 }
-add_filter('upload_mimes', 'tj_mime_types');
+add_filter('upload_mimes', 'sightworks_mime_types');
