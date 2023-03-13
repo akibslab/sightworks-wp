@@ -928,3 +928,6 @@ table th {
 .elementor a.btn {
 	box-shadow: 2px 4px 0px var(--color-gray);
 }
+.elementor img.faq-image {
+	height: 100%;
+}
