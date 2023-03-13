@@ -117,7 +117,7 @@ class TJ_CTA extends Widget_Base {
             [
                 'label' => esc_html__('First CTA', 'tjcore'),
                 'condition' => [
-                    'tj_design_style!' => ['portfolio-cta', 'team-cta', 'default'],
+                    'tj_design_style!' => ['team-cta', 'default'],
                 ]
             ]
         );
@@ -232,6 +232,9 @@ class TJ_CTA extends Widget_Base {
                     ],
                 ],
                 'title_field' => '{{{ list_text }}}',
+                'condition' => [
+                    'tj_design_style' => ['home-cta'],
+                ]
             ]
         );
         $this->end_controls_section();
