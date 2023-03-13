@@ -182,6 +182,11 @@ require SIGHTWORKS_THEME_INC . 'template-functions.php';
 require SIGHTWORKS_THEME_INC . 'template-helper.php';
 
 /**
+ * allow SVG for this theme.
+ */
+require SIGHTWORKS_THEME_INC . 'allow-svg.php';
+
+/**
  * initialize kirki customizer class.
  */
 include_once SIGHTWORKS_THEME_INC . 'sightworks-customizer.php';
