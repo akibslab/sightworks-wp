@@ -71,7 +71,7 @@ if (have_posts()) : while (have_posts()) : the_post();
     <!-- end: Page Heading -->
 
     <!-- start: Details Content -->
-    <?php if (!empty($content_block_1 || $content_block_2 || $content_block_3)) : ?>
+    <?php if (!empty($content_block_1) || !empty($content_block_2) || !empty($content_block_3)) : ?>
       <section class="details-content bg-light-dark">
         <div class="container">
           <div class="row">
