@@ -31,7 +31,6 @@ function sightworks_scripts() {
     wp_enqueue_script('waypoints', SIGHTWORKS_THEME_JS_DIR . 'waypoints.js', ['jquery'], false, true);
     wp_enqueue_script('wow', SIGHTWORKS_THEME_JS_DIR . 'wow.js', ['jquery'], false, true);
     wp_enqueue_script('slick', SIGHTWORKS_THEME_JS_DIR . 'slick.min.js', ['jquery'], false, true);
-    wp_enqueue_script('vide', SIGHTWORKS_THEME_JS_DIR . 'vide.min.js', ['jquery'], false, true);
 
     wp_enqueue_script('packery-mode.pkgd', SIGHTWORKS_THEME_JS_DIR . 'packery-mode.pkgd.min.js', ['imagesloaded'], false, true);
 
