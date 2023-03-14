@@ -231,10 +231,12 @@ textarea:focus {
 }
 
 .slick-dots li.slick-active,
-.kunden .slick-dots li.slick-active {
+#kundenstimmen .slick-dots li.slick-active {
 	background-color: var(--color-gray);
 }
-
+#kundenstimmen .slick-dots li {
+	background-color: var(--color-white);
+}
 .bg-light-light {
 	background-color: var(--color-light-light);
 }
@@ -531,7 +533,7 @@ textarea:focus {
 	top: 0;
 	width: 50%;
 	height: 100%;
-	z-index: -1;
+	z-index: 1;
 	animation: overlay 3s ease-in;
 }
 
@@ -545,6 +547,8 @@ textarea:focus {
 }
 .hero_content {
 	margin-left: 30px;
+	position: relative;
+	z-index: 2;
 }
 .hero_content .title {
 	color: var(--color-white);

@@ -651,20 +651,7 @@ class TJ_Hero_Banner extends Widget_Base {
             <!-- end: Team Hero -->
 
         <?php else : ?>
-
-            <!-- start: Home Hero -->
-            <script>
-                jQuery(document).ready(function($) {
-                    $(".hero-video").vide({}, {
-                        muted: true,
-                        loop: true,
-                        posterType: "jpg",
-                        className: "",
-                        position: '0 0'
-                    });
-                });
-            </script>
-            <section class="hero-section hero-video" data-vide-bg="mp4:<?php echo esc_url($hero_video['url']); ?>, poster: <?php echo esc_url($hero_image['url']); ?>">
+            <section class="hero-section hero-video">
                 <div class="hero-overlay"></div>
                 <div class="container">
                     <div class="row">
