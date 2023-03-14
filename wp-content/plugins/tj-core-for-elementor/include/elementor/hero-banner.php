@@ -121,6 +121,9 @@ class TJ_Hero_Banner extends Widget_Base {
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
                 ],
+                'condition' => [
+                    'tj_design_style!' => 'home-hero',
+                ],
             ]
         );
         $this->add_control(
@@ -133,17 +136,6 @@ class TJ_Hero_Banner extends Widget_Base {
                 ],
                 'condition' => [
                     'tj_design_style' => ['kunden-hero', 'portfolio-hero', 'team-hero', 'project-hero'],
-                ],
-            ]
-        );
-        $this->add_control(
-            'hero_video',
-            [
-                'label' => esc_html__('Choose Video', 'tjcore'),
-                'type' => Controls_Manager::MEDIA,
-                'media_types' => ['video'],
-                'condition' => [
-                    'tj_design_style' => 'home-hero',
                 ],
             ]
         );
@@ -488,7 +480,6 @@ class TJ_Hero_Banner extends Widget_Base {
         $settings = $this->get_settings_for_display();
 
         $hero_image = $settings['hero_image'];
-        $hero_video = $settings['hero_video'];
         $hero_mobile_image = $settings['hero_mobile_image'];
 
         $hero_bold_title = $settings['hero_bold_title'];
