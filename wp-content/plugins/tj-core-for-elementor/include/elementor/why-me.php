@@ -142,9 +142,6 @@ class TJ_WhyMe extends Widget_Base {
         'type' => \Elementor\Controls_Manager::TEXT,
         'default' => esc_html__('Section Mobile Title', 'tjcore'),
         'label_block' => true,
-        'condition' => [
-          'tj_design_style' => 'layout-2'
-        ]
       ]
     );
     $this->add_control(
