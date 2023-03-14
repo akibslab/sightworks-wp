@@ -748,9 +748,9 @@ class TJ_WhyMe extends Widget_Base {
           <div class="row">
             <div class="col">
               <div class="why_me_content">
-                <?php if (!empty($tj_section_title)) : ?>
+                <?php if (!empty($tj_section_title_mobile)) : ?>
                   <div class="section_title text-center wow fadeInUp  d-md-none" data-wow-delay=".3s">
-                    <h2><?php echo tj_kses($tj_section_title); ?></h2>
+                    <h2><?php echo tj_kses($tj_section_title_mobile); ?></h2>
                   </div>
                 <?php endif;
 
