@@ -405,8 +405,8 @@ class TJ_Testimonial extends Widget_Base {
 
                             <?php if (!empty($tj_section_title || $tj_section_title_mobile)) : ?>
                                 <div class="section_title text-center wow fadeInUp" data-wow-delay=".3s">
-                                    <h2 class="d-md-none"><?php echo tj_kses($tj_section_title); ?></h2>
-                                    <h2 class="d-none d-md-block"><?php echo tj_kses($tj_section_title_mobile); ?></h2>
+                                    <h2 class="d-md-none"><?php echo tj_kses($tj_section_title_mobile); ?></h2>
+                                    <h2 class="d-none d-md-block"><?php echo tj_kses($tj_section_title); ?></h2>
                                 </div>
                             <?php endif;
 
