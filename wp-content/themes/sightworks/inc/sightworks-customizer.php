@@ -36,7 +36,7 @@ function sightworks_customizer_panels_sections($wp_customize) {
   // ]);
   // Logos & Favicon
   $wp_customize->add_section('sightworks_theme_logos_favicon', [
-    'title'       => esc_html__('Logos & Favicon', 'sightworks'),
+    'title'       => esc_html__('Site Logos', 'sightworks'),
     'description' => '',
     'priority'    => 11,
     'capability'  => 'edit_theme_options',
@@ -147,6 +147,16 @@ function _theme_logos_favicon_fields($fields) {
     'section'     => 'sightworks_theme_logos_favicon',
     'default'     => get_template_directory_uri() . '/assets/img/logo/logo.png',
   ];
+  // footer logo
+  $fields[] = [
+    'type'        => 'image',
+    'settings'    => 'footer_logo',
+    'label'       => esc_html__('Footer Logo', 'sightworks'),
+    'description' => esc_html__('This image will be show footer logo.', 'sightworks'),
+    'section'     => 'sightworks_theme_logos_favicon',
+    'default'     => get_template_directory_uri() . '/assets/img/logo/footer-logo.png',
+    'priority' => 10,
+  ];
   // preloader logo
   // $fields[] = [
   //   'type'        => 'image',
@@ -219,16 +229,6 @@ add_filter('kirki/fields', '_header_setting_fields');
 Footer
 */
 function _footer_setting_fields($fields) {
-  // footer logo
-  $fields[] = [
-    'type'        => 'image',
-    'settings'    => 'footer_logo',
-    'label'       => esc_html__('Footer Logo', 'sightworks'),
-    'description' => esc_html__('This image will be show footer logo.', 'sightworks'),
-    'section'     => 'footer_setting',
-    'default'     => get_template_directory_uri() . '/assets/img/logo/footer-logo.png',
-    'priority' => 10,
-  ];
   // footer info
   $fields[] = [
     'type'     => 'text',
